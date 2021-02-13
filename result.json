@@ -1,0 +1,53 @@
+{
+    "header": [
+        " *   ",
+        " *   文件描述：本文件为请求参数，包括不限于网址、请求头、响应头、COOKIE、Referer、UserAgent",
+        " *   本文件仅为记录详细请求参数便于调试，非专业人员可将本文件删除",
+        " *   详细介绍请参考: https://bazhan.me/faq",
+        " *   "
+    ],
+    "directory": "yibaishequ-mznet-cf-96dvn2n3",
+    "options": {
+        "url": "http://yibaishequ.mznet.cf/",
+        "index": "index.html",
+        "domain": "yibaishequ.mznet.cf",
+        "origin": "http://yibaishequ.mznet.cf",
+        "ipaddress": "149.129.33.239",
+        "originURL": "http://yibaishequ.mznet.cf/",
+        "filenameGenerator": "byType",
+        "request": {
+            "headers": {
+                "accept": "text/html,*/*",
+                "accept-language": "zh-CN,zh;q=0.9",
+                "accept-encoding": "gzip",
+                "cache-control": "no-cache",
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+                "x-scraper-website": "https://bazhan.me/"
+            }
+        },
+        "response": {
+            "statusCode": 200,
+            "headers": {
+                "server": "kangle/3.5",
+                "date": "Sat, 13 Feb 2021 05:30:49 GMT",
+                "content-encoding": "gzip",
+                "last-modified": "Sat, 13 Feb 2021 04:34:42 GMT",
+                "content-type": "text/html",
+                "x-cache": "HIT from kangle web server",
+                "content-length": "5032",
+                "connection": "close"
+            }
+        }
+    },
+    "user": {
+        "isWhite": false
+    },
+    "formatter": [
+        "saveOriginal"
+    ],
+    "time": {
+        "start": 1613194249298,
+        "end": 1613194251926,
+        "spend": "2.628s"
+    }
+}

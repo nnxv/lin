@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>一白导航 - 清者自清</title>
+<link rel="shortcut icon" href="http://wzdh.cqdm.xyz/1.ico" type="image/x-icon">
+<link rel="icon" href="http://wzdh.cqdm.xyz/1.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="http://yibaishequ.mznet.cf/style/css/style.css">
+<link rel="stylesheet" href="http://yibaishequ.mznet.cf/style/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/index.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>
+<script src="http://yibaishequ.mznet.cf/style/js/jquery01.min"></script>
+<meta data-n-head="true" name="HandheldFriendly" content="true"> 
+
+
+<style type="text/css">
+   mark {
+        background: #249ffd;
+    	color: #fff;
+    }
+    input::-webkit-input-placeholder{color:#fff;}
+    #nr{
+					font-size:20px;
+					margin: 0;
+					background: -webkit-linear-gradient(left,
+					#ffffff,
+					#ff0000 6.25%,
+					#ff7d00 12.5%,
+					#ffff00 18.75%,
+					#00ff00 25%,
+					#00ffff 31.25%,
+					#0000ff 37.5%,
+					#ff00ff 43.75%,
+					#ffff00 50%,
+					#ff0000 56.25%,
+					#ff7d00 62.5%,
+					#ffff00 68.75%,
+					#00ff00 75%,
+					#00ffff 81.25%,
+					#0000ff 87.5%,
+					#ff00ff 93.75%,
+					#ffff00 100%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					background-size: 200% 100%;
+					animation: masked-animation 2s infinite linear;
+					}
+					@keyframes masked-animation {
+					0% {
+					background-position: 0 0;
+					}
+					100% {
+					background-position: -100%, 0;
+					}
+					}
+					img#logo {
+    width: 128px;
+    background-size: cover;
+    border-radius: 200px;
+    box-shadow: 0px 0px 40px rgb(255, 255, 255);
+    border: 3px solid rgba(255, 255, 255, 0.61);
+    opacity: 1;
+    margin: 0 auto;
+    margin-top: 20px;
+	margin-bottom: 20px;
+	transition: all 1.0s;  
+}
+#logo:hover {
+    box-shadow: 0 0 10px rgba(118, 11, 219, 0.527);
+    -webkit-box-shadow: 0 0 19px #fff;
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg); 	/* IE 9 */
+    -moz-transform:rotate(360deg); 	/* Firefox */
+    -webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+    -o-transform:rotate(360deg); 	/* Opera */
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+@media screen and (max-width: 768px) {
+
+.xnkl{
+
+display:none; }
+
+}
+.deng-box {
+        position: fixed;
+        top: -40px;
+        right: 150px;
+        z-index: 9999;
+        pointer-events: none;
+}
+
+.deng-box1 {
+        position: fixed;
+        top: -30px;
+        right: 10px;
+        z-index: 9999;
+        pointer-events: none
+}
+
+.deng-box2 {
+        position: fixed;
+        top: -40px;
+        left: 150px;
+        z-index: 9999;
+        pointer-events: none
+}
+
+.deng-box3 {
+        position: fixed;
+        top: -30px;
+        left: 10px;
+        z-index: 9999;
+        pointer-events: none
+}
+
+.deng-box1 .deng,.deng-box3 .deng {
+        position: relative;
+        width: 120px;
+        height: 90px;
+        margin: 50px;
+        background: #d8000f;
+        background: rgba(216,0,15,.8);
+        border-radius: 50% 50%;
+        -webkit-transform-origin: 50% -100px;
+        -webkit-animation: swing 5s infinite ease-in-out;
+        box-shadow: -5px 5px 30px 4px #fc903d
+}
+
+.deng {
+        position: relative;
+        width: 120px;
+        height: 90px;
+        margin: 50px;
+        background: #d8000f;
+        background: rgba(216,0,15,.8);
+        border-radius: 50% 50%;
+        -webkit-transform-origin: 50% -100px;
+        -webkit-animation: swing 3s infinite ease-in-out;
+        box-shadow: -5px 5px 50px 4px #fa6c00
+}
+
+.deng-a {
+        width: 100px;
+        height: 90px;
+        background: #d8000f;
+        background: rgba(216,0,15,.1);
+        margin: 12px 8px 8px 8px;
+        border-radius: 50% 50%;
+        border: 2px solid #dc8f03
+}
+
+.deng-b {
+        width: 45px;
+        height: 90px;
+        background: #d8000f;
+        background: rgba(216,0,15,.1);
+        margin: -4px 8px 8px 26px;
+        border-radius: 50% 50%;
+        border: 2px solid #dc8f03
+}
+
+.xian {
+        position: absolute;
+        top: -20px;
+        left: 60px;
+        width: 2px;
+        height: 20px;
+        background: #dc8f03
+}
+
+.shui-a {
+        position: relative;
+        width: 5px;
+        height: 20px;
+        margin: -5px 0 0 59px;
+        -webkit-animation: swing 4s infinite ease-in-out;
+        -webkit-transform-origin: 50% -45px;
+        background: orange;
+        border-radius: 0 0 5px 5px
+}
+
+.shui-b {
+        position: absolute;
+        top: 14px;
+        left: -2px;
+        width: 10px;
+        height: 10px;
+        background: #dc8f03;
+        border-radius: 50%
+}
+
+.shui-c {
+        position: absolute;
+        top: 18px;
+        left: -2px;
+        width: 10px;
+        height: 35px;
+        background: orange;
+        border-radius: 0 0 0 5px
+}
+
+.deng:before {
+        position: absolute;
+        top: -7px;
+        left: 29px;
+        height: 12px;
+        width: 60px;
+        content: &quot; &quot;;
+        display: block;
+        z-index: 999;
+        border-radius: 5px 5px 0 0;
+        border: solid 1px #dc8f03;
+        background: orange;
+        background: linear-gradient(to right,#dc8f03,orange,#dc8f03,orange,#dc8f03)
+}
+
+.deng:after {
+        position: absolute;
+        bottom: -7px;
+        left: 10px;
+        height: 12px;
+        width: 60px;
+        content: &quot; &quot;;
+        display: block;
+        margin-left: 20px;
+        border-radius: 0 0 5px 5px;
+        border: solid 1px #dc8f03;
+        background: orange;
+        background: linear-gradient(to right,#dc8f03,orange,#dc8f03,orange,#dc8f03)
+}
+
+.deng-t {
+        font-family: 黑体,Arial,Lucida Grande,Tahoma,sans-serif;
+        font-size: 3.2rem;
+        color: #dc8f03;
+        font-weight: 700;
+        line-height: 85px;
+        text-align: center
+}
+
+.night .deng-box,.night .deng-box1,.night .deng-t {
+        background: transparnet !important
+}
+
+@-moz-keyframes swing {
+        0% {
+                -moz-transform: rotate(-10deg)
+        }
+
+        50% {
+                -moz-transform: rotate(10deg)
+        }
+
+        100% {
+                -moz-transform: rotate(-10deg)
+        }
+}
+
+@-webkit-keyframes swing {
+        0% {
+                -webkit-transform: rotate(-10deg)
+        }
+
+        50% {
+                -webkit-transform: rotate(10deg)
+        }
+
+        100% {
+                -webkit-transform: rotate(-10deg)
+        }
+}
+:root
+{
+	--t1:#dae90d;--t2:#850b0b;color:#3e18e7
+}
+    </style>
+
+<link rel="stylesheet" type="text/css" href="http://yibaishequ.mznet.cf/style/css/notify2.css"> </head>
+<body id="body">
+<body background="images/bz.jpg"></body>
+<div class="index_page">
+<div class="bgimg" style="filter:blur(4px);opacity:.5"></div>
+<main>
+<div class="navbar">
+<header>
+<img src="http://q2.qlogo.cn/headimg_dl?bs=Q1404288120&dst_uin=1404288120&dst_uin=1404288120&;dst_uin=1404288120&spec=100&url_enc=0&referer=bu_interface&term_type=PC" id="logo" title="未知QQ：1404288120">
+<h1 class="title">
+<a href="index.html" class="nuxt-link-exact-active nuxt-link-active">
+接口大全 - </a>&nbsp;
+<i class="fa fa-free-code-camp" style="color:rgba(153, 78, 223, 0.452);"></i>
+</h1>
+<div class="subtitle">
+<i class="fa fa-heart"></i>
+<span>收藏本站以免走失</span>
+</div>
+</header>
+</div>
+<br>
+<div class="home view">
+    <div style="background-color:rgba(44, 44, 42, 0.185);border-radius:25px;box-shadow:0px 0px 5px #eeff002f;padding:5px;margin-top:10px;margin-bottom:0px;">
+        <marquee>
+            <b id="nr">本站最新增加【JnAPI】【小七API】【星辰API】【菜鸟API】，欢迎来到接口大全，站长QQ：未知   温馨提示：最近新冠疫情又严重了，希望大家出门都戴好口罩，积极防护，保护自己，戴口罩，勤洗手，在这里提前祝大家新年快乐！</b> 
+        </marquee>
+    </div>
+<br>
+<br>
+<div id="wp" class="wp">
+
+		<div class="xnkl">
+		<div class="deng-box2">
+		  <div class="deng">
+			<div class="xian"></div>
+			<div class="deng-a">
+			  <div class="deng-b"><div class="deng-t">度</div></div>
+			</div>
+			<div class="shui shui-a">
+			  <div class="shui-c"></div>
+			  <div class="shui-b"></div>
+			</div>
+		  </div>
+		</div>
+		<div class="deng-box3">
+		  <div class="deng">
+			<div class="xian"></div>
+			<div class="deng-a">
+			  <div class="deng-b"><div class="deng-t">欢</div></div>
+			</div>
+			<div class="shui shui-a">
+			  <div class="shui-c"></div>
+			  <div class="shui-b"></div>
+			</div>
+		  </div>
+		</div>
+		<div class="deng-box1">
+		  <div class="deng">
+			<div class="xian"></div>
+			<div class="deng-a">
+			  <div class="deng-b"><div class="deng-t">春</div></div>
+			</div>
+			<div class="shui shui-a">
+			  <div class="shui-c"></div>
+			  <div class="shui-b"></div>
+			</div>
+		  </div>
+		</div>
+		<div class="deng-box">
+		  <div class="deng">
+			<div class="xian"></div>
+			<div class="deng-a">
+			  <div class="deng-b"><div class="deng-t">新</div></div>
+			</div>
+			<div class="shui shui-a">
+			  <div class="shui-c"></div>
+			  <div class="shui-b"></div>
+			</div>
+		  </div>
+		</div>        
+		</div>
+<div class="favorites"></div>
+<div id="context">
+<fieldset class>
+<legend class="nya-title">
+<i class="fa recom"></i>
+<span><h2>同款灯笼</h2></span>
+</legend><br>
+<a href="https://blog.tomys.top/2021-02/2021newyear/" rel="nofollow" class="nya-btn " title="新年快乐" target="blank">
+同款灯笼</a> </fieldset>
+<br><br>
+<fieldset class>
+<legend class="nya-title">
+<i class="fa recom"></i>
+<span><h2>优质API</h2></span>
+</legend><br>
+<a href="https://imcys.com/%e5%be%a1%e5%9d%82%e5%a6%b9%e5%a6%b9api" rel="nofollow" class="nya-btn " title="API接调用" target="blank">
+一白API</a><a href="http://yibai.mznet.cf" rel="nofollow" class="nya-btn " title="站长QQ：1404288120" target="blank">
+菜鸟API</a><a href="http://xiaobai.klizi.cn/" rel="nofollow" class="nya-btn " title="API接调用" target="blank">
+小白API</a><a href="http://lkaa.top/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+三三酱API</a><a href="https://api.muxiuge.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+沐朽阁API</a><a href="http://guying.hasss.top/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+孤影API</a><a href="http://jiuli.xiaoapi.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+久黎API</a><a href="http://jy.831ka.cn/" rel="nofollow" class="nya-btn " title="API接调用" target="blank">
+旧颜API</a><a href="http://api.ymong.top/" rel="nofollow" class="nya-btn " title="API接调用" target="blank">
+小雨API</a><a href="http://yyapi.52msr.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+莹莹API</a> </fieldset>
+<br><br>
+<fieldset class>
+<legend class="nya-title">
+<i class="fa recom"></i>
+<span><h2>API</h2></span>
+</legend><br>
+<a href="http://jnapi.wankamc.site" rel="nofollow" class="nya-btn " title="API接调用" target="blank">
+JnAPI</a><a href="http://xingchen666.cqdm.xyz" rel="nofollow" class="nya-btn " title="API接调用" target="blank">
+星辰API</a><a href="http://api.kumiqq.cn/" rel="nofollow" class="nya-btn " title="API接调用" target="blank">
+小七API</a><a href="http://api.phpth.cn/" rel="nofollow" class="nya-btn " title="API接调用" target="blank">
+陌屿API</a><a href="http://api.52hyjs.com/" rel="nofollow" class="nya-btn " title="API接调用" target="blank">
+HYWLAPI</a><a href="http://xiaobai.klizi.cn/" rel="nofollow" class="nya-btn " title="API接调用" target="blank">
+小白API</a><a href="http://yuchen.fa37y.cn/" rel="nofollow" class="nya-btn " title="API接调用" target="blank">
+宇晨API</a><a href="http://mengjiu.9oys.com/" rel="nofollow" class="nya-btn " title="API接调用" target="blank">
+梦久API</a><a href="http://api.52guleng.cn/" rel="nofollow" class="nya-btn " title="API接调用" target="blank">
+顾冷API</a><a href="http://guanapi.bylds.cn/" rel="nofollow" class="nya-btn " title="API接调用" target="blank">
+顾安API</a><a href="http://api.yanxi520.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+言溪API</a><a href="http://live.b-bs.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+言溪API2</a><a href="http://lingyu.asia" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+雨瞑API</a><a href="http://www.crys.top/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+愁人API</a><a href="http://lost.52msr.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+晚风API</a><a href="http://abc.sqv6.com/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+温柔API</a><a href="http://beimo.huluxia.vip/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+北陌API</a><a href="http://api.tangdouz.com" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+糖豆子API</a><a href="http://pijiu.gss6.top/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+啤酒API</a><a href="http://tao.qxapk.com/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+淘客API</a><a href="http://api.clousx6.cn" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+棉花糖API</a><a href="https://api.xingzhige.com/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+星之阁API</a><a href="http://api.clousx7.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+白龙API</a><a href="http://api.cvpia.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+奶御API</a><a href="http://ymty.52msr.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+天一API</a><a href="http://api.xiaobaibk.com/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+小白API</a><a href="http://laoliapi.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+老李API</a><a href="http://xhy.52msr.cn/api/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+狐妖API</a><a href="http://xiaoxi02.club/a/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+小汐API</a><a href="http://xi2020.club/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+初音API</a><a href="http://ai.kenaisq.top/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+小杰API</a><a href="http://xinnian.x-iq.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+小念API</a><a href="https://api.vvhan.com/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+小韩API</a><a href="http://glapi.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+孤狼API</a><a href="http://47.94.135.214/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+顾宇API</a><a href="http://weishu6.xyz/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+天陌API</a><a href="http://yyapi.52msr.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+莹莹API</a><a href="https://api.qqsuu.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+大米API</a><a href="https://moxiya.top/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+墨兮API</a><a href="https://api.dzzv.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+独醉API</a><a href="http://sg.Clousx7.cn" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+上官API</a><a href="http://47.103.221.237/api/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+琉异API</a><a href="https://api.uomg.com/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+优启梦API</a><a href="http://www.dashige.xyz/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+大师哥API</a><a href="https://api.oioweb.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+教书先生API</a><a href="http://xiaoapi.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+慕名API</a><a href="http://kyapi.cn/index.php" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+小鸿API</a><a href="http://www.brhsm.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+漫小猫API</a><a href="http://api.wpbom.com/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+免费API</a><a href="http://ronghua.xyz/api/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+荣华API</a><a href="http://fcapi.qiudy.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+风尘API</a><a href="http://jinapi.52jintia.xyz/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+瑾天API</a><a href="https://api.muxiaoguo.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+木小果API</a> </fieldset>
+<br><br>
+<fieldset class>
+<legend class="nya-title">
+<i class="fa useful"></i>
+<span><h2>常用</h2></span>
+</legend><br>
+<a href="http://www.dw81.cn/" rel="nofollow" class="nya-btn " title="防红链接生成" target="balnk">
+81防红网</a><a href="https://www.ygdy8.com/index.html" rel="nofollow" class="nya-btn " title="电影资源" targey="blank">
+阳光电影</a> </fieldset>
+<br><br>
+<fieldset class>
+<legend class="nya-title">
+<i class="fa tool"></i>
+<span><h2>友链</h2></span>
+</legend><br>
+<a href="http://cn.wz7.top/tz.php" rel="nofollow" class="nya-btn " title="站长QQ：2116813159" target="blank">
+菜鸟API</a><a href="http://xiaobai.klizi.cn/" rel="nofollow" class="nya-btn " title="API接调用" target="blank">
+小白API</a><a href="http://lkaa.top/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+三三酱API</a><a href="https://api.muxiuge.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+沐朽阁API</a><a href="http://guying.hasss.top/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+孤影API</a><a href="http://jiuli.xiaoapi.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+久黎API</a><a href="http://jy.831ka.cn/" rel="nofollow" class="nya-btn " title="API接调用" target="blank">
+旧颜API</a><a href="http://api.ymong.top/" rel="nofollow" class="nya-btn " title="API接调用" target="blank">
+小雨API</a><a href="http://yyapi.52msr.cn/" rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+莹莹API</a><a href="https://music.8888zf.cn/ " rel="nofollow" class="nya-btn " title="API接口调用" target="blank">
+导演音乐</a> </fieldset>
+<br><br>
+<fieldset class>
+<legend class="nya-title">
+<span><h2>资源</h2></span>
+</legend><br>
+<a href="http://videotool.cloud/" rel="nofollow" class="nya-btn " title="视频兔" target="blank">
+视频工具网</a><a href="https://www.vlogquan.com/" rel="nofollow" class="nya-btn " title="VLOG圈" target="blank">
+VLOG圈</a><a href="https://www.52pojie.cn/" rel="nofollow" class="nya-btn " title="论坛" target="blank">
+吾爱破解</a> </fieldset>
+<br><br>
+<fieldset class>
+<legend class="nya-title">
+<span><h2>工具</h2></span>
+</legend><br>
+<a href="https://shlone10124.lanzous.com/iK4Ekk7auob" rel="nofollow" class="nya-btn " title="密码:10241" target="blank">
+群发器</a> </fieldset>
+<br><br>
+<fieldset class>
+<legend class="nya-title">
+<i class="fa fa-volume-up"></i>
+<span><h2>公告</h2></span>
+</legend>
+<br>
+<ul class="nya-list">
+<li>
+<div class="badge-info">
+<span class="badge hot">热门</span>
+<span class="badge new">接口</span>
+<span class="badge vip">导航</span>
+<span class="badge error">收录</span>
+</div>
+</li>
+<li>
+<b class="nya-c-danger">QQ群:954423977<a href="index.html" target="_blank" rel="noopener noreferrer"></a></b>
+</li>
+<li>
+<b>若您喜欢本站，可将本站收藏到收藏夹，以便后续使用</b>
+</li>
+<li>
+本站域名：<a href="yibaidaohang.mznet.cf" target="_blank" rel="noopener noreferrer">yibaidaohang.mznet.cf</a>　
+</li>
+<li>如果您有提交收录或者申请友情，请通过邮箱:<a href="https://mail.qq.com/">1404288120@qq.com</a> 联系我们。</li>
+
+</ul>
+</fieldset>
+<br><br>
+<fieldset class>
+	<legend class="nya-title">
+	<i class="fa fa-volume-up"></i>
+	<span><h2>申请友链</h2></span>
+	</legend>
+	<br>
+	<ul class="nya-list">
+	<li>
+	<div class="badge-info">
+	<span class="badge vip">友链申请</span>
+	</div>
+	</li>
+	<li>
+	<b class="nya-c-danger">请申请友联前跪求把本站也添加到友链<a href="index.html" target="_blank" rel="noopener noreferrer"></a></b>
+	</li>
+	<li>
+	<b class="nya-c-danger">友链必备信息：【网站名称】 【网站地址】<a href="index.html" target="blank" rel="noopener noreferrer"></a></b>
+	</li>
+	<li>
+		<b class="nya-c-danger">将以上信息发送到我邮箱：<a href="https://mail.qq.com/" target="blank" rel="noopener noreferrer">1404288120@qq.com</a>即可</b>
+		</li>
+		<li>
+			<b class="nya-c-danger">欢迎大家积极申请友链<a href="index.html" target="blank" rel="noopener noreferrer"></a></b>
+			</li>
+	
+	</ul>
+	</fieldset>
+<br><br>
+<fieldset class>
+<legend class="nya-title">
+<i class="fa fa-cny"></i>
+
+
+</legend></fieldset>
+</div>
+</div>
+<br><br>
+<center>
+<img src="images/beian%20logo.png" width="20" height="20"><a href="https://beian.miit.gov.cn" target="_blank">赣ICP备 20009925号-1</a>
+</center>
+</div></main></div></body>
+</html>
